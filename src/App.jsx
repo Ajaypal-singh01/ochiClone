@@ -1,12 +1,15 @@
 
 import './App.css'
-import Navbar from './components/navbar/Navbar'
+import Landingpage from './components/LandingPage/Landingpage';
+import Navbar from './components/navbar/Navbar';
+
 
 function App() {
  
   return (
-    <div className='w-full h-screen  bg-zinc-900  text-white ' >
+    <div className='w-full h-screen  text-white ' >
      <Navbar/>
+     <Landingpage/>
     </div>
   )
 }
