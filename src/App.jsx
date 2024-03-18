@@ -1,5 +1,6 @@
 
 import './App.css'
+import About from './components/About';
 import Landingpage from './components/LandingPage/Landingpage';
 import Marquee from './components/marquee';
 import Navbar from './components/navbar/Navbar';
@@ -12,6 +13,7 @@ function App() {
      <Navbar/>
      <Landingpage/>
      <Marquee/>
+     <About/>
     </div>
   )
 }

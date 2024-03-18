@@ -8,11 +8,11 @@ function Marquee() {
       x: 0
     },
     animate: {
-      x: "-100%",
+      x: "-130%",
       transition: {
         ease: "linear",
         repeat: Infinity,
-        duration: 5
+        duration: 13
       }
     }
   };
@@ -23,7 +23,7 @@ function Marquee() {
           variants={marqueeVariants}
           initial="initial"
           animate="animate"
-          className="text-[15vw] leading-none  font-semibold -mb-5"
+          className="text-[22vw] leading-none  font-semibold -mb-5"
           
         >
           WE ARE OCHI
@@ -32,14 +32,14 @@ function Marquee() {
          variants={marqueeVariants}
          initial="initial"
          animate="animate"
-          className="text-[15vw] leading-none  font-semibold -mb-5"
+          className="text-[22vw] leading-none  font-semibold -mb-5 "
         >
           WE ARE OCHI
         </motion.h1>
         
       </div>
     
-      {/* className="text-[15vw] leading-none  font-semibold -mb-5" */}
+      
       </div>
   );
 }
