@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowUp } from "react-icons/fa";
+import ochibrandImg from "../../assets/ochi_brand_heroimg.jpg"
 
 
 function Landingpage() {
@@ -10,7 +11,7 @@ function Landingpage() {
           return (
             <div key={index} className="masker   ">
               <div className="w-fit flex items-center overflow-hidden "> 
-              {index === 1 && (<div className="w-[8vw] h-[5vw] bg-green-500 rounded"></div>)}
+              {index === 1 && (<div className="w-[8vw] h-[5vw] bg-green-500 rounded"><img src={ochibrandImg} alt="" className="rounded" /></div>)}
               <h1 className="uppercase text-[6vw] leading-[6vw] tracking-tighter font-grotexsk font-semibold ">
                 {item}
               </h1></div>
