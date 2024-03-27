@@ -27,8 +27,8 @@ function Eyes() {
             </div>
           </div>
           <div className="w-[15vw] h-[15vw] bg-white rounded-full flex justify-center items-center">
-            <div className="w-2/3 h-2/3 rounded-full bg-zinc-900 flex items-center justify-center font-montreal">
-            <div style={{transform:`rotate(${rotate}deg)`}} className="line w-full h-5  ">
+            <div  className="w-2/3 h-2/3 rounded-full bg-zinc-900 flex items-center justify-center font-montreal">
+            <div style={{transform:` rotate(${rotate}deg)`}} className="line w-full h-5  ">
                 <div className="w-5 h-5 bg-zinc-100 rounded-full"></div>
               </div>
             </div>
