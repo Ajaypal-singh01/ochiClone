@@ -1,6 +1,7 @@
 
 import './App.css'
 import About from './components/About';
+import Cards from './components/Cards';
 import Eyes from './components/Eyes';
 import Featured from './components/Featured';
 import Landingpage from './components/LandingPage/Landingpage';
@@ -18,6 +19,7 @@ function App() {
      <About/>
      <Eyes/>
      <Featured/>
+     <Cards/>
     </div>
   )
 }
