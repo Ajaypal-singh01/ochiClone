@@ -3,7 +3,7 @@ import AboutImg from '../assets/AboutImg.jpg';
 
 function About() {
   return (
-    <div className="w-full py-20 font-montreal bg-[#CDEA68] rounded-tl-3xl rounded-tr-3xl text-zinc-800">
+    <div data-scroll data-scroll-section data-scroll-speed="-0.2" className="w-full py-20 font-montreal bg-[#CDEA68] rounded-tl-3xl rounded-tr-3xl text-zinc-800">
       <h1 className="text-5xl mx-10 font-normal  ">
         Ochi is a strategic partner for fast-growing tech businesses that need
         to raise funds, sell products, explain complex ideas, and hire great

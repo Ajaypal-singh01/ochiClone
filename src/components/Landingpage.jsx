@@ -1,21 +1,31 @@
 import React from "react";
 import { FaArrowUp } from "react-icons/fa";
-import ochibrandImg from "../../assets/ochi_brand_heroimg.jpg"
-
+import ochibrandImg from "../assets/ochi_brand_heroimg.jpg";
+import { easeInOut, motion } from "framer-motion";
 
 function Landingpage() {
   return (
-    <div className="w-full h-screen  bg-zinc-900 pt-1">
+    <div data-scroll data-scroll-section data-scroll-speed="-0.3" className="w-full h-screen  bg-zinc-900 pt-1">
       <div className="textstructure mt-36 px-10 ">
         {["we create", "eye opening", "presentations"].map((item, index) => {
           return (
             <div key={index} className="masker   ">
-              <div className="w-fit flex items-center overflow-hidden "> 
-              {index === 1 && (<div className="w-[8vw] h-[5vw] bg-green-500 rounded"><img src={ochibrandImg} alt="" className="rounded" /></div>)}
-              <h1 className="uppercase text-[6vw] leading-[6vw] tracking-tighter font-grotexsk font-semibold ">
-                {item}
-              </h1></div>
-             
+              <div className="w-fit flex items-center overflow-hidden ">
+                {index === 1 && (
+                  <motion.div
+                    initial={{ width: "0" }}
+                    animate={{ width: "8vw" }}
+                    transition={{ease:[0.76, 0, 0.24, 1] ,duration:1.2}}
+                    
+                    className="w-[8vw] h-[5vw] rounded"
+                  >
+                    <img src={ochibrandImg} alt="" className="rounded" />
+                  </motion.div>
+                )}
+                <h1 className="uppercase text-[6vw] leading-[6vw] tracking-tighter font-grotexsk font-semibold ">
+                  {item}
+                </h1>
+              </div>
             </div>
           );
         })}
@@ -32,7 +42,6 @@ function Landingpage() {
             <span className="rotate-[45deg] text-xs font-light">
               <FaArrowUp />
             </span>
-            
           </div>
         </div>
       </div>

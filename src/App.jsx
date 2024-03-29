@@ -4,15 +4,21 @@ import About from './components/About';
 import Cards from './components/Cards';
 import Eyes from './components/Eyes';
 import Featured from './components/Featured';
-import Landingpage from './components/LandingPage/Landingpage';
+import Footer from './components/Footer';
+import Landingpage from './components/Landingpage';
 import Marquee from './components/marquee';
-import Navbar from './components/navbar/Navbar';
+import Navbar from './components/Navbar';
+import LocomotiveScroll from 'locomotive-scroll';
+
+
 
 
 function App() {
+  const locomotiveScroll = new LocomotiveScroll();
  
   return (
-    <div className='w-full min-h-screen  text-white bg-zinc-900 ' >
+    
+    <div className='w-full min-h-screen  text-white bg-zinc-900 overflow-hidden ' >
      <Navbar/>
      <Landingpage/>
      <Marquee/>
@@ -20,6 +26,7 @@ function App() {
      <Eyes/>
      <Featured/>
      <Cards/>
+     <Footer/>
     </div>
   )
 }

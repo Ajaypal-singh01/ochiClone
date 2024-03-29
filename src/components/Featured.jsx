@@ -4,7 +4,7 @@ import viseimg from "../assets/ViseImg.jpg";
 
 function Featured() {
   return (
-    <div className="bg-zinc-800 w-full py-10">
+    <div className=" bg-zinc-800 w-full py-10">
       <div className="text-5xl font-montreal px-10 py-10">
         Featured projects
       </div>
