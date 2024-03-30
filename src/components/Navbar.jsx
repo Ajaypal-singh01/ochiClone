@@ -35,9 +35,9 @@ function Navbar() {
         </svg>
       
       </div>
-      <div className="links flex gap-10">
+      <div className="links  flex gap-10">
         {['Services','Out work','About us','Insights','Contact us'].map((elem, index)=>{
-            return <a key={index} className={`text-md capitalize font-light ${index===4 && "ml-32"}`}>{elem}</a>
+            return <div className="relative"><a key={index} className={`  text-md capitalize font-light ${index===4 && "ml-32"}`}>{elem}</a></div>
         })}
       </div>
     </div>
